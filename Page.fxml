@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FX.FXEncryptor.Main">
+   <children>
+      <TextArea fx:id="plain" layoutX="14.0" layoutY="14.0" prefHeight="280.0" prefWidth="270.0" promptText="Enter text to encrypt" wrapText="true" AnchorPane.leftAnchor="14.0" />
+      <TextArea fx:id="hidden" layoutX="316.0" layoutY="14.0" prefHeight="280.0" prefWidth="270.0" promptText="Enter text to decrypt" wrapText="true" AnchorPane.rightAnchor="14.0" />
+      <JFXButton alignment="CENTER" layoutX="89.0" layoutY="321.0" onAction="#encrypt" prefHeight="30.0" prefWidth="120.0" style="-fx-background-color: aquamarine;" text="ENCRYPT" />
+      <JFXButton alignment="CENTER" layoutX="391.0" layoutY="321.0" onAction="#decrypt" prefHeight="30.0" prefWidth="120.0" style="-fx-background-color: aquamarine;" text="DECRYPT" />
+      <JFXButton alignment="CENTER" layoutX="89.0" layoutY="359.0" onAction="#getList1" prefHeight="30.0" prefWidth="120.0" style="-fx-background-color: aquamarine;" text="GET ASCII LIST">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </JFXButton>
+      <JFXButton alignment="CENTER" layoutX="391.0" layoutY="359.0" onAction="#getList2" prefHeight="30.0" prefWidth="120.0" style="-fx-background-color: aquamarine;" text="GET ASCII LIST">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </JFXButton>
+      <JFXButton alignment="CENTER" layoutX="240.0" layoutY="359.0" onAction="#getKey" prefHeight="30.0" prefWidth="120.0" style="-fx-background-color: aquamarine;" text="GET KEY">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </JFXButton>
+      <JFXButton alignment="CENTER" layoutX="240.0" layoutY="321.0" onAction="#setKey" prefHeight="30.0" prefWidth="120.0" style="-fx-background-color: aquamarine;" text="SET KEY" />
+   </children>
+</AnchorPane>
